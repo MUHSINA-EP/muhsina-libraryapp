@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+		<meta charset="utf-8">
+		<title><%=title%></title>
+		<meta name="generator" content="Bootply" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+		<link href="css/bootstrap.min.css" rel="stylesheet">
+		<link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.min.css" rel="stylesheet">
+		<!--[if lt IE 9]>
+			<script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+		<link href="css/styles.css" rel="stylesheet">
+	</head>
+	<body>
+<header class="navbar navbar-bright navbar-fixed-top" role="banner">
+  <div class="container">
+    <div class="navbar-header">
+      <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".navbar-collapse">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a href="/" class="navbar-brand">Home</a>
+    </div>
+    <nav class="collapse navbar-collapse" role="navigation">
+      <ul class="nav navbar-nav">
+        <%for(i=0;i<nav.length;i++){%>
+        <li>
+          <a href="<%=nav[i].link%>"><%=nav[i].name%></a>
+        </li>
+        <%}%>
+
+      </ul>
+    <!--  <ul class="nav navbar-right navbar-nav">
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="glyphicon glyphicon-search"></i></a>
+          <ul class="dropdown-menu" style="padding:12px;">
+            <form class="form-inline">
+              <button type="submit" class="btn btn-default pull-right"><i class="glyphicon glyphicon-search"></i></button><input type="text" class="form-control pull-left" placeholder="Search">
+            </form>
+          </ul>
+        </li>
+        
+      </ul>
+    </nav>
+  </div>-->
+</header>
+
+
+  <body><!DOCTYPE html>
+    <html>
+    <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+    *{
+      padding: 0;
+      margin:0;
+     
+  }
+
+    body {font-family: Arial, Helvetica, sans-serif;
+    
+      background-image: url(/images/bg4.jpg);
+        background-size: cover;
+        background-position:center; 
+        background-repeat: repeat; 
+        margin-top: 0%;
+        
+    opacity: 95%;
+
+    }
+    form {float: none; 
+    background-color: rgb(243, 249, 252);
+    height: 25em;
+    width: 26em;
+    margin-top: 5%;
+    margin-left: 17%;
+    padding: 10px;
+    text-align: justify;
+   border: 3px solid #cfd1db;}
+
+   form h1{
+     text-align: center;
+   }
+    
+    input[type=text], input[type=password] {
+      width: 25%;
+      padding: 12px 20px;
+      margin: 8px 0;
+      display: inline-block;
+      border: 1px solid rgb(214, 213, 235);
+      box-sizing: border-box;
+    }
+    
+    button {
+      background-color: #114b2b;
+      color: white;
+      padding: 14px 20px;
+      margin: 8px 0;
+      border: none;
+      cursor: pointer;
+      width: 25%;
+    }
+    
+    button:hover {
+      opacity: 0.8;
+    }
+    
+    
+    
+    
+    
+   
+    </style>
+    </head>
+    <body>
+    
+    
+    <div>
+    <form action="" method="post">
+
+      <h1>Login Here!!</h1>
+    
+      <div class="container">
+        <label for="uname"><b>Username</b></label>
+        <br>
+        <input type="text" placeholder="Enter Username" name="uname" required>
+        <br>
+    
+        <label for="psw"><b>Password</b></label>
+        <br>
+        <input type="password" placeholder="Enter Password" name="psw" required>
+        <br>
+            
+        <button type="submit">Login</button>
+       
+      </div>
+    
+     
+    </form>
+</div>
+    </body>
+    </html>
+    
+
+    </body>
+</html>
