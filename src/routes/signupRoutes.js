@@ -1,5 +1,9 @@
 const express = require('express');
 const signupRouter = express.Router();
+const Userdata =  require("../model/user");
+
+
+
 
 signupRouter.get('/',function(req,res){
     res.render("signup",
@@ -11,4 +15,25 @@ signupRouter.get('/',function(req,res){
     });   
 });
 
+
+signupRouter.post('/add',function(req,res){
+    var item = {
+        email: req.body.email,
+        use: req.body.use, 
+       psw: req.body.psw,
+       
+ 
+    } 
+    var user = Userdata(item);
+   user.save();
+    res.redirect('/login');
+ });
+      
+    
+
+
+
+          
+        
+        
 module.exports = signupRouter;

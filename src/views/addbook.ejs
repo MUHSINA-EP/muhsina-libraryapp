@@ -137,14 +137,14 @@
           <!--/addbook-->
           
           <div class="row">    
-            <form method="GET" action="">
-                Title:<input type="text" name="title">
+            <form method="POST" action="/addbook/add">
+                Title:<input type="text" name="title"  required>
                 <br>
-                Author:<input type="text" name="author">
+                Author:<input type="text" name="author"  required>
                 <br>
-                Genre:<input type="text" name="genre">
+                Genre:<input type="text" name="genre"  required>
                 <br>
-                Image:<input type="file" name="image">
+                Image:<input type="file" name="image" >
                 <br>
                 <button type="submit">Add</button>
             </form>

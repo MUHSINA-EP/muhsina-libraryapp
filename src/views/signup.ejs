@@ -122,14 +122,14 @@ button:hover {
   </header>
 
 
-<form action="#" style="border:1px solid #ccc"onsubmit="return myFunction()"  >
+<form action="/signup/add" style="border:1px solid #ccc"onsubmit="return myFunction()"  method="POST">
   <div class="container">
     <h1>Sign Up</h1>
     <p>Please fill in this form to create an account.</p>
     <hr>
 
     <label for="email"><b>Email</b></label>
-    <input type="text" placeholder="Enter Email" name="email"  id="myEmail"  pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" required >
+    <input type="text" placeholder="Enter Email" name="email"  id="myEmail"   required >
     
     
     <label for="usr"><b>Username</b></label>

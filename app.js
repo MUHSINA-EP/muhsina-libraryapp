@@ -1,6 +1,8 @@
 const express = require('express');
 const port = process.env.PORT || 2000;
 
+
+const bodyParser            =  require("body-parser");
 const app = new express();
 const booksRouter=require('./src/routes/booksRoutes');
 const authorsRouter=require('./src/routes/authorsRoutes');
@@ -12,8 +14,9 @@ const addauthorRouter=require('./src/routes/addauthorRoutes');
 
 
 
-
-
+app.use(bodyParser.urlencoded(
+    { extended:true }
+))
 
 app.use(express.static('./public'));
 app.set('view engine','ejs');
@@ -24,6 +27,11 @@ app.use('/login',loginRouter);
 app.use('/signup',signupRouter);
 app.use('/addbook',addbookRouter);
 app.use('/addauthor',addauthorRouter);
+
+
+
+
+
 
 
 
